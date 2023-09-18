@@ -1,5 +1,5 @@
 import argparse
-import asyncio
+# import asyncio
 
 from modules.reader import read_from_file
 from modules.analyzer import word_count, word_frequency, find_matches, translate_text
@@ -9,8 +9,8 @@ from modules.utils import simulated_long_running_task
 def main():
 
     # Para simular uma tarefa assíncrona
-    loop = asyncio.get_event_loop()
-    loop.run_until_complete(simulated_long_running_task())
+    # loop = asyncio.get_event_loop()
+    # loop.run_until_complete(simulated_long_running_task())
     
     parser = argparse.ArgumentParser(description="Sistema de Análise e Processamento de Textos")
     parser.add_argument("filename", help="O nome do arquivo a ser processado")
