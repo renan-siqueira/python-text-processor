@@ -2,6 +2,7 @@ import re
 
 from collections import Counter
 from langdetect import detect
+from translate import Translator
 
 
 def word_count(text):
@@ -45,3 +46,8 @@ def count_characters_without_spaces(text):
 
 def count_paragraphs(text):
     return len([p for p in text.split("\n\n") if p])
+
+
+def translate_text(text, to_language="pt", from_language="auto"):
+    translator = Translator(to_lang=to_language, from_lang=from_language)
+    return translator.translate(text)

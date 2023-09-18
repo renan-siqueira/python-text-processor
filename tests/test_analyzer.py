@@ -1,5 +1,5 @@
 import unittest
-from modules.analyzer import word_count, word_frequency, summarize_text, detect_language
+from modules.analyzer import word_count, word_frequency, summarize_text, detect_language, translate_text
 
 
 class TestAnalyzer(unittest.TestCase):
@@ -33,5 +33,10 @@ class TestAnalyzer(unittest.TestCase):
         self.assertEqual(result, expected_language)
 
 
-if __name__ == "__main__":
-    unittest.main()
+class TestTranslation(unittest.TestCase):
+    
+    def test_translation(self):
+        text = "Hello, world!"
+        expected_translation = "Olá mundo!"
+        result = translate_text(text, to_language="pt", from_language="en")
+        self.assertEqual(result, expected_translation)
