@@ -10,19 +10,19 @@ Ele oferece uma variedade de funcionalidades, desde análises estatísticas bás
 ## Funcionalidades:
 
 *1. Leitura e Escrita de Arquivos*
-- read_from_file(filename): Lê o conteúdo de um arquivo e retorna o texto.
-- write_to_file(filename, content): Escreve ou sobrescreve o conteúdo em um arquivo.
+- `read_from_file(filename)`: Lê o conteúdo de um arquivo e retorna o texto.
+- `write_to_file(filename, content)`: Escreve ou sobrescreve o conteúdo em um arquivo.
 
 *2. Análise Estatística*
-- count_words(text): Conta o número de palavras no texto.
-- count_characters(text, spaces=True): Conta o número de caracteres no texto. O parâmetro spaces determina se os espaços serão contados ou não.
+- `count_words(text)`: Conta o número de palavras no texto.
+- `count_characters(text, spaces=True)`: Conta o número de caracteres no texto. O parâmetro spaces determina se os espaços serão contados ou não.
 
 *3. Manipulação de Texto*
-- remove_text(text, substring): Remove todas as ocorrências da substring do texto.
-- replace_text(text, old, new): Substitui todas as ocorrências de uma substring por outra.
+- `remove_text(text, substring)`: Remove todas as ocorrências da substring do texto.
+- `replace_text(text, old, new)`: Substitui todas as ocorrências de uma substring por outra.
 
 *4. Tradução de Texto*
-- translate_text(text, to_language="en", from_language="auto"): Traduz um texto para um idioma especificado. A detecção de idioma de origem é automática por padrão, mas pode ser especificada.
+- `translate_text(text, to_language="en", from_language="auto")`: Traduz um texto para um idioma especificado. A detecção de idioma de origem é automática por padrão, mas pode ser especificada.
 
 ---
 
